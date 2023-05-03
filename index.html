@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./stayle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    
+</head>
+
+<body>
+    <div class="wrapper__htm">
+    <nav class="nav__menu">
+        <ul class="menu__wrapper">
+            <li id="tyrkish__click">Турция</li>
+            <li id= "egypit__click">Египет</li>
+            <li id= "kharkiv__click">Харьков</li>
+        </ul>
+    </nav>
+    <div class="wrapper__gifAndText">
+        <img class="bah" src="./img/0edc716135c55552ed0f7aa673847e03.gif" alt="gif">
+    <h1 class="text__love"><span>Я Вас</span>  Люблю </h1>
+    <img class="bah" src="./img/0edc716135c55552ed0f7aa673847e03.gif" alt="gif">
+    </div>
+    <!-- Swiper -->
+ <div class="content__wrapper">
+    
+    <div class="img__hard">
+        <img src="./img/pngimg.com - heart_PNG51342.png" alt="">
+    </div>
+    <div class="container__swipper">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/mbl3.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/mbl2.png" />
+                </div>
+                 <div class="swiper-slide">
+                    <img src="./img/mbl.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/nika3.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/nika4.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/nika5.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/photo_2023-04-28_20-24-25.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/photo_nika2.png" >
+                </div>
+            </div>
+        
+        </div>
+    </div>
+ </div>
+ <div class="tyrkish">
+    <div class="wrapper__tyrkish">
+        <div>
+            <img src="./img/tyrkihs1.png" alt="img">
+        </div>
+        <div>
+            <img src="./img/Tyrkish2.jpg" alt="img">
+        </div>
+        <div>
+            <img src="./img/Tyrkish3.jpg" alt="img">
+        </div>
+    </div>
+    
+ </div>
+ <div class="egypit">
+    <div class="egypit__imgs">
+        <div><img src=" ./img/Egypt3.jpg" alt="img"></div>
+        <div><img src="./img/Egypt2.jpg" alt="img"></div>  
+        <div><img src="./img/Egypt1.jpg" alt="img"></div> 
+    </div>
+ </div>
+ <div class="kharkiv">
+    <div class="kh__img"><img src="./img/kharkiv2.jpg." alt="img"></div>
+    <div class="kh__img"><img src="./img/Kharkiv1.jpg" alt="img"></div>
+    <div class="kh__img"><img src="./img/kharkiv3.jpg" alt="img"></div>
+    <div class="kh__img"><img src="./img/kharkiv4.jpg" alt="img"></div>
+ </div>
+</div>
+
+ <div class="klick__I__love">
+    <div class="main__bgSwper"><div class="back">НАЗАД</div>  </div>
+    <div class="swiper mySwiperBg">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/bg__1.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__2.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__3.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__4.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__5.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__6.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__7.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__8.jpg" alt="img"></div>
+            <div class="swiper-slide"><img src="./img/bg__9.jpg" alt="img"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+ </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            loop:true,
+             autoplay: {
+                delay: 2500,},
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            
+        });
+       var swiper3 = new Swiper(".mySwiperBg", {
+        slidesPerView: 1,
+        lopp: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+        });
+    </script>
+    <script src="./test.js"></script>
+</body> 
+
+</html>
